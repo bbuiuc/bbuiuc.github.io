@@ -15,22 +15,22 @@
 
 
 .nav {
+    background:#fdfcf7;
   display: flex;
   width: 100%;
-  flex-direction: row;
-  justify-self: flex-start;
+  flex-direction: row; 
   flex-wrap: nowrap;
   align-items: center;
-  padding: 1.4rem;
+  padding: 1rem;
   justify-content: space-between; 
     top: 0;
   right: 0; 
- height:10vh;
+ height:10vh; 
   z-index: 4;
 }
 .nav .sitelogo{
-width:3rem !important; 
-height:3rem !important;
+width:2.3rem !important; 
+height:2.3rem !important;
 margin-top:-3px;
 }
 
@@ -46,7 +46,9 @@ margin-top:-3px;
   flex-direction: column;
   flex-wrap: nowrap;
   color: white; 
-  z-index: 1;filter: saturate(134%);
+  background: #fdfcf7;
+  z-index: 1;
+  filter: saturate(134%);
   min-height:46vh;
 }  
 
@@ -61,17 +63,16 @@ margin-top:-3px;
     /* text-shadow: 1px 1px black; */
     padding: 0rem 3.2rem;
     text-align: center;
-    margin-top: -4rem;
+    margin-top: 0;
 }
 .nav h1 {
-  font-family: "Markerfelt", serif !important;
-  text-shadow: 0 0 1px black;
-  font-weight: 100;
-  margin: 1em 0.6em !important; 
-  margin-left:3px;
-  letter-spacing: 0.17rem;
-  font-size:2.4rem;
-  /* display: none; */
+    font-family: "Markerfelt", serif !important;
+    /* text-shadow: 0 0 1px black; */
+    font-weight: 300;
+    /* letter-spacing: 0.17rem; */
+    font-size: 1.7rem;
+    margin: 0;
+    /* display: none; */
 }
 
 .valign {
@@ -86,10 +87,10 @@ margin-top:-3px;
 .gal h3 {
     margin-left: 1rem;
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: #4c3b31;
     min-width: 47%;
-    max-width: 60%;
+    max-width: 56%;
     font-weight: 300;
     margin-bottom: -3rem;
     letter-spacing: 1.5px;
@@ -300,14 +301,14 @@ option {
     background: #fdfcf7 !important;
 
 }
-
+/* business description */
 .section p {
-    padding: 1rem 0.5em !important;
+    padding: 1rem 1rem !important;
     text-align: center;
     font-family: "Nunito", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 300 !important;
-    font-size: 1.62rem;
+    font-size: 1.18rem;
     font-style: normal !important;
 
 }
@@ -386,11 +387,11 @@ option {
     background: white;
     margin-bottom: 2rem;
     border-radius: 2rem;
-    box-shadow: 1px 1px 1px -1px #bab7a8;
+    box-shadow: 1px 1px 2px -1.6px #cdccf7;
 }
 
 .entry .LinkWidget_inner__psVfv {
-    padding: 0rem;
+    padding: 0;
 }
 
 .entry .LinkWidget_inner__psVfv>a {
@@ -415,14 +416,14 @@ a.LinkWidget_link__jHKiK img {
     height: 50px !important;
     border-radius: 25px;
 }
-
+/*  Business Name */
 .entry span.LinkWidget_text___bWBY {
     color: black !important;
     text-align: left;
     margin-left: 0.9rem;
     flex: 1;
     min-width: initial !important;
-    font-size: 1.7rem;
+    font-size: 1.23rem;
 }
 
 .LinkWidget_container__pW7c9,
@@ -449,7 +450,7 @@ a.LinkWidget_link__jHKiK img {
     color: darkgrey;
     margin-right: 1rem;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .poster {
@@ -591,7 +592,7 @@ h3.text-left {
 #carousel-selection button {
     scroll-snap-align: start;
     /* min-width: 10rem; */
-    padding: 0.4rem 1.2rem 0.31rem 0.57rem;
+    padding: 0.2rem 1rem 0.29rem 0.55rem;
     text-wrap: nowrap;
     /* flex: none; */
     display: flex;
@@ -602,8 +603,8 @@ h3.text-left {
     font-weight: 200;
     font-style: normal;
     height: max-content;
-    font-size: 1.3rem;
-    margin: 1rem;
+    font-size: 1rem;
+    margin: 1rem 0.5rem;
     border: none;
     border-radius: 2rem;
 }
@@ -615,8 +616,8 @@ h3.text-left {
 }
 
 #carousel-selection button img {
-    width: 3.9rem;
-    height: 3.9rem;
+    width: 3rem;
+    height: 3rem;
     object-fit: contain;
     /* border-radius: 50%;
   background: rgba(255, 255, 255, 42%);*/
@@ -646,10 +647,12 @@ h3.text-left {
 .call-to-action h3 {
     font-size: xx-large;
 }
-
+.stat {
+    text-align: center;
+}
 .call-to-action .stat p:first-child {
     color: #b46414;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .call-to-action .stat p:last-child {
