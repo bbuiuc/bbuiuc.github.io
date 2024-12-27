@@ -13,7 +13,19 @@
 
 }
 
-
+.announcements {
+    color: mintcream;
+    width: 100%;
+    background: #523a26;
+    text-align: center;
+    font-size: 10px;
+    /* display: flex; */
+    justify-content: center;
+    padding: 0.3rem 0;
+}
+.announcements span {
+  font-weight:bold;
+}
 .nav {
     background:#fdfcf7;
   display: flex;
