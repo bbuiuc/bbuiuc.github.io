@@ -480,7 +480,7 @@ a.LinkWidget_link__jHKiK img {
     display: flex;
     width: 100%;
     min-height: 25vh;
-    background: linear-gradient(#0b0503, #765036);
+    background: linear-gradient(to bottom, #674129eb, #765036);
     margin-bottom:-2px
 }
 
@@ -499,11 +499,6 @@ a.LinkWidget_link__jHKiK img {
 
     color: #f8f8f8 !important;
 }
-
-.footer {
-    background: #674129eb;
-}
-
 
 p.text-left {
     color: #885a2b !important;
