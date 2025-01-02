@@ -792,6 +792,7 @@ img.sitelogo {
         margin: 2rem auto;
     }
 } 
+<<<<<<< HEAD
 
 @media (min-width: 600px) or (min-width:960px) {
 .gal {
@@ -1011,9 +1012,5 @@ button#go-back {
 }
 /*End of media query */
 }
-
-
-
-
 
 
