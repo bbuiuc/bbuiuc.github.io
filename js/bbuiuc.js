@@ -233,6 +233,7 @@
         console.log("Carousel selection's X:" + currentXpos);
     });
       $("#carousel-selection button[name]").on("click" , (f)=>{
+        moveTo();
         activateCategory(f.currentTarget.name);
     });
          /* $("#carousel-selection button[name]").on("click" , (e)=>{
@@ -254,7 +255,7 @@ function moveTo(){
 
 
   $('html, body').animate({
-    scrollTop: $("#selection").offset().top
+    scrollTop: $(".resp-contain").offset().top
   }, 370);
 
 }            
