@@ -591,7 +591,12 @@ h3.text-left {
     border: none;
     border-radius: 2rem;
 }
-
+button#go-back {
+    background: #51321a;
+    border: 0;
+    border-radius: 1rem;
+    padding: 2rem 0;
+}
 #carousel-selection button:not(.active) {
     color: #474747;
     background: #dddcdc;
@@ -985,7 +990,7 @@ button#register {
     display:flex;
     flex-flow:column;
  }
-.footer , .placehold{
+.footer , .placehold, .call-to-action:has(h3){
     display: none;
 }
 .clickable-btns i {
@@ -1004,12 +1009,7 @@ button#register {
     padding: 0.6rem;
 }
 
-button#go-back {
-    background: #51321a;
-    border: 0;
-    border-radius: 1rem;
-    padding: 2rem 0;
-}
+
 /*End of media query */
 }
 
