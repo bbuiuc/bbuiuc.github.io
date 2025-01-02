@@ -219,8 +219,10 @@
 
       }
       function toggleMemberships(btn) {
-        $(btn).toggleClass("activated");
-        $(".memberships").toggle("blind", 300);
+        $('button#register').toggleClass("activated");
+        $("#memberships").toggle("fade", 300);
+
+        document.getElementsByTagName('body')[0].style.overflow = (btn.id == 'go-back') ? 'auto' : 'hidden';
       }
 
 

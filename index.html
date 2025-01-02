@@ -17,6 +17,80 @@
     <div id="popup-img" onclick='hidePopup()'>
 <img src="" />
 </div>
+        <div class="overlay" id="memberships">
+             <div class="memberships flex-col">
+                <h3 class="text-left">Choose a Membership</h3>
+                <p class="text-left">Cancel Anytime</p>
+                <div class="membership-container flex-row">
+                    <div class="membership" onclick="handleMembership('bronze')" name="bronze">
+                        <div class="flex-col">
+                            <h3 class="header">$ 2.99 / mo</h3>
+                            <ul>
+                                <li>
+                                    <span class="bolded">Business Overview</span>
+                                    : Showcase your business with its name and concise description
+                                </li>
+                                <li>
+                                    <span class="bolded">Website Integration</span>
+                                    : Include a clickable link to your website, directing visitors to your specified URL when they click on your card.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="membership" onclick="handleMembership('silver')" name="silver" class="selected">
+                        <div class="flex-col">
+                            <h3 class="header"> $ 4.99 / mo</h3>
+                            <ul>
+                                <li>
+                                    <span class="bolded">Bronze membership benefits</span>
+                                </li>
+                               <li>
+                                <span class="bolded">Image Gallery</span>
+                                : Enhance your profile by uploading a gallery of images to showcase your business or products.
+                               </li>
+                               <li>
+                                <span class="bolded">Logo Display</span>
+                                : Add your company logo to personalize your card and strengthen brand recognition.
+                               </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="membership" onclick="handleMembership('gold')" name="gold"> 
+                        <div class="flex-col">
+                            <h3 class="header"> $ 7.99 / mo</h3>
+                            <ul>
+                                <li>
+                                    <span class="bolded">Silver membership benefits</span>
+                                    
+                                </li>
+                               
+                               <li>
+                                <span class="bolded">Exclusive Access</span>
+                                : Gain entry to community and campus events dedicated to supporting Black-owned businesses (join the mailing list for updates).
+                               </li>
+                               <li>
+                                <span class="bolded">Premium Visibility</span>
+                                : Ensure your business remains prominently featured at the top of the list for increased exposure.
+                               </li>
+                               <li>
+                                <span class="bolded">Product Showcase</span>
+                                : List and sell your products directly through your card for seamless transactions.
+                               </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col justify-center">
+                    <a href="#"  id="pay">
+                        Proceed to Payment
+                    </a>
+                    <button onclick="toggleMemberships(this)" id="go-back">
+                        Go Back
+                    </button>
+                </div>
+
+            </div>  
+        </div>
 <div class="announcements">
     <span onclick="showMemberships"> Memberships </span> are required starting Spring 2025
 </div>
@@ -54,57 +128,70 @@
             <option value="tech">Tech Services</option>
         </select>
     </div> -->
-    <div class = "resp-contain">
-        <!-- width over x , Set selection Container to float left, businesses to float right -->
-        <div class="selection-container">
-            <div id="carousel-selection">
-                <button name="hair" class="active">
-                    <img src="https://i.postimg.cc/W4dY4h6d/hair.png" />
-                    Hair
+    <div class = "resp-contain"> 
+         <div class="selection-container">
+                <div class="siteImg">
+                    <a href="#"><img class="sitelogo showLplus" src="https://i.postimg.cc/v1ydqc72/newavatar-color-adj.png" alt="redblackgreen" border="0"></a>
+                     </div>
+                     <h1 class="showLplus">
+                        BBUIUC
+                     </h1>
+<div id="carousel-selection">
+                <button name="hair" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/W4dY4h6d/hair.png" style="filter: invert(0);">
+                    <span>Hair</span>
                     
                 </button>
-                <button name="beauty">
-                    <img src="https://i.postimg.cc/2ScXm4vp/beauty.png"/>
-                    Beauty
+                <button name="beauty" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/2ScXm4vp/beauty.png" style="filter: invert(0);">
+                    <span>Beauty</span>
                     
                 </button>
-                <button name="photography">
-                    <img src="https://i.postimg.cc/FRcPj86m/photography.png" />Photography
+                <button name="photography" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/FRcPj86m/photography.png" style="filter: invert(0);"><span>Photography</span>
                 
                 </button>
-                <button name="health">
-                    <img src="https://i.postimg.cc/44VMtHCt/health.png" />Fitness
+                <button name="health"  style=" font-weight: 500; color: rgb(255, 255, 255); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/44VMtHCt/health.png" "><span>Fitness</span>
                 </button>
-                <button name="food">
-                    <img src="https://i.postimg.cc/C5GQVXCJ/food.png" />
-                    Food
+                <button name="food" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/C5GQVXCJ/food.png" style="filter: invert(0);">
+                    <span>Food</span>
                     
                 </button>
-                <button name="fashion">
-                    <img src="https://i.postimg.cc/YSPVN1qN/fashion.png"/>
-                    Fashion
+                <button name="fashion" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/YSPVN1qN/fashion.png" style="filter: invert(0);">
+                    <span>Fashion</span>
                 </button>
-                <button name="music">
-                    <img src="https://i.postimg.cc/2S8XPH1F/music.png" />Music
+                <button name="music" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/2S8XPH1F/music.png" style="filter: invert(0);"><span>Music</span>
         
                 </button>
-               <button name="art" >
-                <img src="https://i.postimg.cc/y8yKLT2v/art.png"/>
-                Art
+               <button name="art" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                <img src="https://i.postimg.cc/y8yKLT2v/art.png" style="filter: invert(0);">
+                <span>Art</span>
             </button>
-            <button name="business">
-                <img src="https://i.postimg.cc/nLNR9p00/business.png"/>
-                Business
+            <button name="business" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                <img src="https://i.postimg.cc/nLNR9p00/business.png" style="filter: invert(0);">
+               <span> Business </span>
 
             </button>
-            <button name="tech">
-                <img src="https://i.postimg.cc/D0kMHnG8/tech.png" />Tech
+            <button name="tech" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                <img src="https://i.postimg.cc/D0kMHnG8/tech.png" style="filter: invert(0);"><span>Tech</span>
 
             </button>
+            <div class="qr showLplus">
+                    <img src="https://i.postimg.cc/vHLZc9GF/qrcode-grey-red.png">
+                </div>
+                <div class="clickable-btns showLplus flex-row">
+                     <button onclick="redirect('https://instagram.com/bbuiuc')"><i class="bi bi-instagram"></i></button> 
+                    <button onclick="redirect('mailto:bbuiuc@gmail.com')"><i class="bi bi-envelope"></i></button>
+                </div>
             <div class="placehold">
                 Add a business
             </div>
         </div>
+
         </div>
         <div id="businesses">
             <div class="section" id="art">
@@ -835,139 +922,71 @@
                         </div>
                     </div>
                 </div>
+                 
             </div>
-
+       <div id="spotlight" class="showLplus">
+            <h4>Spotlight</h4>
+            <div class="pin flex-row">
+                <img class="logo" src="https://i.postimg.cc/FRN2mFGm/digicard1.png
+                    ">
+                <div class="flex-col">
+                    <h5>Nearfield</h5>
+                    <h6>Digital Business 
+                        Cards</h6>
+                </div>
+            </div>
+            <div class="spacer">
+                
+            </div>
+            <div class="pin">
+                <div class="call-to-action">
+                    <div class="flex-col align-vert ">
+                        <p>Expose your business to BBUIUC's</p>
+                    </div>
+                    <div class="flex-row justify-even">
+                        <div class=" flex-col stat">
+                            <p>950</p>
+                            <p>Users</p>
+                        </div>
+                        <div class=" flex-col stat">
+                            <p>5160</p>
+                            <p>Visits</p>
+                        </div>
+                        <div class=" flex-col stat">
+                            <p>~400</p>
+                            <p>Views /mo</p>
+                        </div>
+                    </div>
+                    <div class="align-vert text-center">
+                        <button id="register" onclick="toggleMemberships(this)">Become a member</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
             <div class="poster">
     <!--           <img src="https://i.postimg.cc/ncWwPcKj/qr-banner-siteready-waifu2x-photo-noise2-scale.png">
      -->      </div>
-          <div class="call-to-action">
-            <div class="flex-col align-vert ">
-                <h3>Not on the list?</h3>
-                <p>Expose your businesses to this platforms visitors</p>
-            </div>
-            <div class="flex-row justify-even">
-                <div class=" flex-col stat">
-                    <p>950</p>
-                    <p>Unique Visits</p>
-                </div>
-                <div class=" flex-col stat">
-                    <p>5160</p>
-                    <p>Total Visits</p>
-                </div>
-                <div class=" flex-col stat">
-                    <p>~400</p>
-                    <p>Monthly Visits</p>
-                </div>
-            </div>
-            <div class="align-vert text-center">
-                <button id="register" onclick="toggleMemberships(this)">Become a member</button>
-            </div>
-        </div>
-            <div class="memberships hideMe flex-col">
-                <h3 class="text-left">Choose a Membership</h3>
-                <p class="text-left">Cancel Anytime</p>
-                <div class="membership-container flex-row">
-                    <div class="membership" onclick="handleMembership('bronze')" name="bronze">
-                        <div class="flex-col">
-                            <h3 class="header">$ 2.99 / mo</h3>
-                            <ul>
-                                <li>
-                                    <span class="bolded">Business Overview</span>
-                                    : Showcase your business with its name and concise description
-                                </li>
-                                <li>
-                                    <span class="bolded">Website Integration</span>
-                                    : Include a clickable link to your website, directing visitors to your specified URL when they click on your card.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="membership" onclick="handleMembership('silver')" name="silver" class="selected">
-                        <div class="flex-col">
-                            <h3 class="header"> $ 4.99 / mo</h3>
-                            <ul>
-                                <li>
-                                    <span class="bolded">Business Overview</span>
-                                    : Showcase your business with its name and concise description
-                                </li>
-                                <li>
-                                    <span class="bolded">Website Integration</span>
-                                    : Include a clickable link to your website, directing visitors to your specified URL when they click on your card.
-                                </li>
-                               <li>
-                                <span class="bolded">Image Gallery</span>
-                                : Enhance your profile by uploading a gallery of images to showcase your business or products.
-                               </li>
-                               <li>
-                                <span class="bolded">Logo Display</span>
-                                : Add your company logo to personalize your card and strengthen brand recognition.
-                               </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="membership" onclick="handleMembership('gold')" name="gold"> 
-                        <div class="flex-col">
-                            <h3 class="header"> $ 7.99 / mo</h3>
-                            <ul>
-                                <li>
-                                    <span class="bolded">Business Overview</span>
-                                    : Showcase your business with its name and concise description
-                                </li>
-                                <li>
-                                    <span class="bolded">Website Integration</span>
-                                    : Include a clickable link to your website, directing visitors to your specified URL when they click on your card.
-                                </li>
-                               <li>
-                                <span class="bolded">Image Gallery</span>
-                                : Enhance your profile by uploading a gallery of images to showcase your business or products.
-                               </li>
-                               <li>
-                                <span class="bolded">Logo Display</span>
-                                : Add your company logo to personalize your card and strengthen brand recognition.
-                               </li>
-                               <li>
-                                <span class="bolded">Exclusive Access</span>
-                                : Gain entry to community and campus events dedicated to supporting Black-owned businesses (join the mailing list for updates).
-                               </li>
-                               <li>
-                                <span class="bolded">Premium Visibility</span>
-                                : Ensure your business remains prominently featured at the top of the list for increased exposure.
-                               </li>
-                               <li>
-                                <span class="bolded">Product Showcase</span>
-                                : List and sell your products directly through your card for seamless transactions.
-                               </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-row justify-center">
-                    <a href="#"  id="pay">
-                        Proceed to Payment
-                    </a>
-                </div>
-
-            </div>   
+          
 
           <div class="footer">
             <div class="content-lapse">
-                <div class="left half">
-                    <div class="qr">
-                        <img src="https://i.postimg.cc/vHLZc9GF/qrcode-grey-red.png">
-                    </div>
-                </div> 
-                <div class="right half">
-                    
-                    <div class="clickable-btns">
-                        <button onclick="redirect('https://instagram.com/bbuiuc')"><i class="bi bi-instagram"></i>bbuiuc</button> 
-                        <button onclick="redirect('mailto:bbuiuc@gmail.com')"><i class="bi bi-envelope"></i>bbuiuc@gmail.com</button>
-                        <button onclick="redirect('')"><i class="bi bi-building-add"></i>Register a Business</button>
+                    <div class="left half">
+                        <div class="qr">
+                            <img src="https://i.postimg.cc/vHLZc9GF/qrcode-grey-red.png">
+                        </div>
+                    </div> 
+                    <div class="right half">
+                        
+                        <div class="clickable-btns">
+                            <button onclick="redirect('https://instagram.com/bbuiuc')"><i class="bi bi-instagram"></i>bbuiuc</button> 
+                            <button onclick="redirect('mailto:bbuiuc@gmail.com')"><i class="bi bi-envelope"></i>bbuiuc@gmail.com</button>
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>
     <div class="poster">
       <img src="imgs/wegotus.png">
