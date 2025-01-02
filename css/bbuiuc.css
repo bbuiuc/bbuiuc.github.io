@@ -969,6 +969,7 @@ button#register {
     padding: 0.5rem !important;
     border-radius: 5px !important;
     background: #e7e6e4 !important;
+    font-size: small;
 }
 
 .call-to-action div:first-child p {
