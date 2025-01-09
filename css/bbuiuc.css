@@ -837,6 +837,7 @@ img#nearfield2-product-selection {}
 
 .features.flex-row {
     gap: 1rem;
+    padding: 1rem 0;
 }
 
 .features img:nth-child(2n) {
@@ -852,6 +853,7 @@ img#nearfield2-product-selection {}
     padding: 1rem;
     border-radius: 10px;
     border: none;
+    width: 100%;
     background: #00bb6f61;
 }
 

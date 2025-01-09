@@ -192,7 +192,7 @@
         }
         function addSocialIcons(){
 
-          $('.entry a').each((x,ele) => {
+          $('.entry a:not(.paymentAnchor)').each((x,ele) => {
             if (ele.href.indexOf('instagram') > 0) {
               var insta = document.createElement("i");
               insta.className = "bi bi-instagram";
@@ -259,3 +259,18 @@ function moveTo(){
   }, 370);
 
 }            
+function updateProduct(imgEle, identifier, href, colour, price) {
+    let paymentButton = document.getElementById(identifier);
+    let productColour = document.getElementById("nearfield2-product-color");
+    let productPrice = document.getElementById("nearfield2-product-price");
+    let productDisplay = document.getElementById("nearfield2-product-display");
+    
+
+
+    productDisplay.src = imgEle.src;
+    productPrice.innerText = '$' + price.toFixed(2);
+    productColour.innerText = colour;
+    paymentButton.href = href;
+
+    return $('.selected').length > 0 && $('.selected').removeClass('selected') && $(imgEle).addClass('selected')
+}

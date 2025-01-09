@@ -925,29 +925,32 @@
 
                                 <h4><i class="bi bi-shop"></i> Shop Nearfield</h4>
                                 <div class="flex-row products ">
-                                    <img id="nearfield2-product-selection" src="https://nfcards.github.io/product-imgs/black.png" style="
+                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/14k9AE5NicrwaxafZ4','Black',20.00)" src="https://nfcards.github.io/product-imgs/black.png" style="
                                     width: 33%;
                                     " class="selected">      
-                                    <img id="nearfield2-product-selection" src="https://nfcards.github.io/product-imgs/crimson.png" style="
+                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/5kA004b7C0IObBe9AF','Red',20.00)" src="https://nfcards.github.io/product-imgs/crimson.png" style="
                                     width: 33%;
                                     ">
-                                    <img id="nearfield2-product-selection" src="https://nfcards.github.io/product-imgs/green.png" style="
+                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/aEU9AE7Vq1MScFi6os','Green',20.00)" src="https://nfcards.github.io/product-imgs/green.png" style="
                                     width: 33%;
                                     ">
-                                    <img id="nearfield2-product-selection" src="https://nfcards.github.io/product-imgs/white.png" style="
+                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/00g8wA0sYbnseNq9AH','White',20.00)" src="https://nfcards.github.io/product-imgs/white.png" style="
                                     width: 33%;
                                     ">
-                                    <img id="nearfield2-product-selection" src="https://nfcards.github.io/product-imgs/pink.png" style="
+                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/fZe4gka3ygHMcFicMV','Pink',20.00)" src="https://nfcards.github.io/product-imgs/pink.png" style="
                                     width: 33%;
                                     ">
-                                    <img id="nearfield2-product-selection" src="https://nfcards.github.io/product-imgs/blue.png" style="
+                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/9AQbIMfnS0IO6gU14c','Blue',20.00)" src="https://nfcards.github.io/product-imgs/blue.png" style="
                                     width: 33%;
                                     ">
                                 </div>
                                 <div class="product-display">
                                     <img id="nearfield2-product-display" src="https://nfcards.github.io/product-imgs/black.png" class="display"><div class="product-details flex-col">
-                                        <h5>Color: <b>Black</b></h5>
-                                        <h5><b>$20.00</b></h5><button class="payment" onclick="redirect('https://stripe.com')"> Purchase </button>
+                                        <h5>Color: <b id="nearfield2-product-color">Black</b></h5>
+                                        <h5><b id="nearfield2-product-price">$20.00</b></h5>
+                                        <a href="https://nfcards.github.io/product-imgs/black.png" class="paymentAnchor" id="nearfield2Pay">
+                                            <button class="payment"> Purchase </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
