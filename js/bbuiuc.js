@@ -222,7 +222,9 @@
         $('button#register').toggleClass("activated");
         $("#memberships").toggle("fade", 300);
 
-        document.getElementsByTagName('body')[0].style.overflow = (btn.id == 'go-back') ? 'auto' : 'hidden';
+        document.getElementsByTagName('body')[0].style.overflow = (btn.name == 'go-back') ? 'auto' : 'hidden';
+        /* Automatically set the default membership to silver */
+        handleMembership('silver');
       }
 
 
@@ -272,5 +274,5 @@ function updateProduct(imgEle, identifier, href, colour, price) {
     productColour.innerText = colour;
     paymentButton.href = href;
 
-    return $('.selected').length > 0 && $('.selected').removeClass('selected') && $(imgEle).addClass('selected')
+    return $('.products .selected').length > 0 && $('.products .selected').removeClass('selected') && $(imgEle).addClass('selected')
 }

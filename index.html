@@ -25,7 +25,8 @@
                 <div class="membership-container flex-row">
                     <div class="membership" onclick="handleMembership('bronze')" name="bronze">
                         <div class="flex-col">
-                            <h3 class="header">$ 2.99 / mo</h3>
+                            <h3 class="header">Bronze</h3>
+<h5 class="price">$ 2.99 / mo</h5>
                             <ul>
                                 <li>
                                     <span class="bolded">Business Overview</span>
@@ -38,9 +39,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="membership" onclick="handleMembership('silver')" name="silver" class="selected">
+                    <div class="membership selected" onclick="handleMembership('silver')" name="silver">
                         <div class="flex-col">
-                            <h3 class="header"> $ 4.99 / mo</h3>
+                              <h3 class="header">Silver</h3>
+<h5 class="price">$ 4.99 / mo</h5>
                             <ul>
                                 <li>
                                     <span class="bolded">Bronze membership benefits</span>
@@ -58,7 +60,8 @@
                     </div>
                     <div class="membership" onclick="handleMembership('gold')" name="gold"> 
                         <div class="flex-col">
-                            <h3 class="header"> $ 7.99 / mo</h3>
+                              <h3 class="header">Gold</h3>
+<h5 class="price">$ 7.99 / mo</h5>
                             <ul>
                                 <li>
                                     <span class="bolded">Silver membership benefits</span>
@@ -82,19 +85,19 @@
                     </div>
                 </div>
                 <div class="flex-col justify-center">
-                    <a href="#"  id="pay">
+                    <a href="https://buy.stripe.com/4gw4igfky6L72TmeUV" id="pay" class="enabled">
                         Proceed to Payment
                     </a>
-                    <button onclick="toggleMemberships(this)" id="go-back">
+                    <button onclick="toggleMemberships(this)" class="goBack" name="go-back">
                         Go Back
                     </button>
                 </div>
 
-            </div>  
+            </div>
         </div>
 
-<div class="announcements">
-    <span onclick="showMemberships"> Memberships </span> are required starting Spring 2025
+<div class="announcements" onclick="toggleMemberships(this)" name="go-back">
+    <b> Memberships </b> are required starting Jan 21 2025
 </div>
 <div class="nav">
     <div class="flex-row align-vert">
