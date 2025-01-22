@@ -128,31 +128,14 @@
         }
 
         function inactivateBtn(btn) {
-            $(btn).removeClass('active');
-            $(btn).css({
-                    'background-color': '#dddcdc',
-                    'font-weight': '100',
-                    'color' : '#474747',
-                    'opacity' : '0.6'
-                });
-
-            $(btn).find('img').css({
-                'filter' : 'invert(0)',
-                
-            }) 
+            $(btn).removeClass('active');  
         }
+
         function activateBtn(btn, bkgColor) {
             $(btn).addClass('active');
             $(btn).css({
-                    'background-color': bkgColor,
-                    'font-weight': '500',
-                    'color' : 'white',
-                    'opacity' : '1'
+                    'background-color': bkgColor
             });
-            $('#carousel-selection button.active img').css({
-                'filter' : 'invert(1)'
-            }) ;
-
         }
         function setCarouselBtn(category) {
             let selectedBtn = document.querySelector('#carousel-selection button[name="'+ category+ '"]');
@@ -261,18 +244,3 @@ function moveTo(){
   }, 370);
 
 }            
-function updateProduct(imgEle, identifier, href, colour, price) {
-    let paymentButton = document.getElementById(identifier);
-    let productColour = document.getElementById("nearfield2-product-color");
-    let productPrice = document.getElementById("nearfield2-product-price");
-    let productDisplay = document.getElementById("nearfield2-product-display");
-    
-
-
-    productDisplay.src = imgEle.src;
-    productPrice.innerText = '$' + price.toFixed(2);
-    productColour.innerText = colour;
-    paymentButton.href = href;
-
-    return $('.products .selected').length > 0 && $('.products .selected').removeClass('selected') && $(imgEle).addClass('selected')
-}

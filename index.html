@@ -156,8 +156,8 @@
                     <img src="https://i.postimg.cc/FRcPj86m/photography.png" style="filter: invert(0);"><span>Photography</span>
                 
                 </button>
-                <button name="health"  style=" font-weight: 500; color: rgb(255, 255, 255); opacity: 0.6;">
-                    <img src="https://i.postimg.cc/44VMtHCt/health.png" "><span>Fitness</span>
+                <button name="health"  style=" font-weight: 500; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/44VMtHCt/health.png"><span>Fitness</span>
                 </button>
                 <button name="food" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
                     <img src="https://i.postimg.cc/C5GQVXCJ/food.png" style="filter: invert(0);">
@@ -998,15 +998,15 @@
                     </div>
                     <div class="flex-row justify-even">
                         <div class=" flex-col stat">
-                            <p>950</p>
+                            <p>1,078</p>
                             <p>Users</p>
                         </div>
                         <div class=" flex-col stat">
-                            <p>5,160</p>
+                            <p>5,388</p>
                             <p>Visits</p>
                         </div>
                         <div class=" flex-col stat">
-                            <p>~400</p>
+                            <p>≈ 449</p>
                             <p>Views /mo</p>
                         </div>
                     </div>
@@ -1023,26 +1023,30 @@
     <!--           <img src="https://i.postimg.cc/ncWwPcKj/qr-banner-siteready-waifu2x-photo-noise2-scale.png">
      -->      </div>
           <div class="call-to-action">
-            <div class="flex-col align-vert ">
-                <h3>Not on the list?</h3>
-                <p>Expose your businesses to this platforms visitors</p>
-            </div>
-            <div class="flex-row justify-even">
-                <div class=" flex-col stat">
-                    <p>950</p>
-                    <p>Users</p>
+            <div id="call-to-action">
+
+           
+                <div class="flex-col align-vert ">
+                    <h3>Not on the list?</h3>
+                    <p>Expose your businesses to this platforms visitors</p>
                 </div>
-                <div class=" flex-col stat">
-                    <p>5,160</p>
-                    <p>Visits</p>
+                <div class="flex-row justify-even">
+                    <div class=" flex-col stat">
+                        <p class="counter-roll" id="users1">1,078</p>
+                        <p>Users</p>
+                    </div>
+                    <div class=" flex-col stat">
+                        <p class="counter-roll" id="visits1">5,388</p>
+                        <p>Visits</p>
+                    </div>
+                    <div class=" flex-col stat">
+                        <p class="counter-roll" id="monthly1">≈ 449</p>
+                        <p>Views/mo</p>
+                    </div>
                 </div>
-                <div class=" flex-col stat">
-                    <p>~ 400</p>
-                    <p>Views/mo</p>
+                <div class="align-vert text-center">
+                    <button id="register" onclick="toggleMemberships(this)">Become a member</button>
                 </div>
-            </div>
-            <div class="align-vert text-center">
-                <button id="register" onclick="toggleMemberships(this)">Become a member</button>
             </div>
         </div>
 
@@ -1071,7 +1075,8 @@
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/bbuiuc.js"> </script>
-
+    <script src="js/counters.js"></script>
+    <script src="js/scroll.js"></script>
     </div>
     </div>
 
