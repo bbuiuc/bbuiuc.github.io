@@ -220,7 +220,7 @@
       $("#carousel-selection button[name]").on("click" , (f)=>{
         moveTo();
         activateCategory(f.currentTarget.name);
-    });
+      });
          /* $("#carousel-selection button[name]").on("click" , (e)=>{
             activateCategory(e.currentTarget.name);
         });*/
@@ -230,7 +230,7 @@
       addSocialIcons();
       logoPlaceholders();
 
-      activateBtn($('#carousel-selection button[name="hair"]'),getColor('hair'));
+      activateBtn($('#carousel-selection button[name="tech"]'),getColor('tech'));
 
       
 function hidePopup(){
@@ -258,4 +258,11 @@ function updateProduct(imgEle, identifier, href, colour, price) {
     paymentButton.href = href;
 
     return $('.products .selected').length > 0 && $('.products .selected').removeClass('selected') && $(imgEle).addClass('selected')
+}
+
+let businessLinks = document.querySelectorAll(".section:not(#tech) .entry a");
+for (link in businessLinks) {
+    businessLinks[link].onclick = (e) => {
+        e.preventDefault();
+    };
 }
