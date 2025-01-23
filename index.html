@@ -142,6 +142,10 @@
                         BBUIUC
                      </h1>
 <div id="carousel-selection">
+                 <button name="tech" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                <img src="https://i.postimg.cc/D0kMHnG8/tech.png" style="filter: invert(0);"><span>Tech</span>
+
+            </button>
                 <button name="hair" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
                     <img src="https://i.postimg.cc/W4dY4h6d/hair.png" style="filter: invert(0);">
                     <span>Hair</span>
@@ -181,10 +185,7 @@
                <span> Business </span>
 
             </button>
-            <button name="tech" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                <img src="https://i.postimg.cc/D0kMHnG8/tech.png" style="filter: invert(0);"><span>Tech</span>
-
-            </button>
+           
             <div class="qr showLplus">
                     <img src="https://i.postimg.cc/vHLZc9GF/qrcode-grey-red.png">
                 </div>
@@ -508,7 +509,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section activeCategory" id="hair">
+                <div class="section" id="hair">
                     <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
                         <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(224, 93, 4);"></div>
                     </div>
@@ -890,7 +891,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section" id="tech">
+                <div class="section activeCategory" id="tech">
                     <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
                         <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: #231b1d;"></div>
                     </div>
@@ -1011,7 +1012,7 @@
                         </div>
                     </div>
                     <div class="align-vert text-center">
-                        <button id="register" onclick="toggleMemberships(this)">Become a member</button>
+                        <button class="register2" onclick="toggleMemberships(this)">Become a member</button>
                     </div>
                 </div>
             </div>
@@ -1023,7 +1024,7 @@
     <!--           <img src="https://i.postimg.cc/ncWwPcKj/qr-banner-siteready-waifu2x-photo-noise2-scale.png">
      -->      </div>
           <div class="call-to-action">
-            <div id="call-to-action">
+            <div id="call-to-action" class="showOnScroll">
 
            
                 <div class="flex-col align-vert ">
@@ -1032,6 +1033,10 @@
                 </div>
                 <div class="flex-row justify-even">
                     <div class=" flex-col stat">
+                        <p class="counter-roll" id="monthly1">≈ 449</p>
+                        <p>Views/mo</p>
+                    </div>
+                    <div class=" flex-col stat">
                         <p class="counter-roll" id="users1">1,078</p>
                         <p>Users</p>
                     </div>
@@ -1039,13 +1044,9 @@
                         <p class="counter-roll" id="visits1">5,388</p>
                         <p>Visits</p>
                     </div>
-                    <div class=" flex-col stat">
-                        <p class="counter-roll" id="monthly1">≈ 449</p>
-                        <p>Views/mo</p>
-                    </div>
                 </div>
                 <div class="align-vert text-center">
-                    <button id="register" onclick="toggleMemberships(this)">Become a member</button>
+                    <button id="register" class="register showOnScroll" onclick="toggleMemberships(this)">Become a member</button>
                 </div>
             </div>
         </div>

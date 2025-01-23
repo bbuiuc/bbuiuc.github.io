@@ -254,7 +254,7 @@
       align-items: center;
   }
   
-  #businesses .section[id]:not(#hair),
+  #businesses .section[id]:not(.activeCategory),
   #businesses .DelimiterWidget_container__lgynE,
   .UserPage_footer__wOeFd {
       display: none;
@@ -399,6 +399,9 @@
       font-style: normal !important;
   
   }
+  .section:not(#tech) .entry {
+    filter: blur(8px);
+}
   
   a.LinkWidget_link__jHKiK {
       display: flex;
@@ -464,7 +467,8 @@
       width: 100%;
       min-height: 25vh;
       background: linear-gradient(to bottom, #674129eb, #765036);
-      margin-bottom:-2px
+      margin-bottom:-2px;
+      box-shadow: inset 0px 6px 3px 0px #59351d;
   }
   
   .footer .content-lapse {
@@ -530,7 +534,7 @@
       font-weight: 300;
       margin: 0.55rem 0rem;
   }
-  #call-to-action {
+ .showOnScroll {
     opacity: 0;
   }
   .content-lapse .qr img {
@@ -658,9 +662,10 @@
       text-align: center;
   }
   .call-to-action .stat p:first-child {
-      color: #b46414;
+      color: #7c6146;
       font-size: 1.8rem;
       min-width: 80px;
+      margin-bottom: 0;
   }
   
   .call-to-action .stat p:last-child {
@@ -670,12 +675,14 @@
   
   .call-to-action button#register {
       margin: 2rem 0;
-      padding: 1.5rem;
-      border: 1px solid #ece8e0 !important;
-      background: #ffffff;
+      padding: 1.2rem;
+      font-family: MONOSPACE;
+      border: 0px solid #d5bb8f !important;
+      background: #3d2a1d;
+      box-shadow: -3px 4px 0px 1px #733f15;
       border-radius: 1rem;
-      color: #4c4c4c;
-      font-weight: 400;
+      color: #ffffff;
+      font-weight: 500;
   }
   
   .call-to-action button#register.activated {
@@ -891,10 +898,7 @@
       margin-bottom:3%;
   }
   .products::-webkit-scrollbar, .features::-webkit-scrollbar {display: none;}
-  @media (min-width:960px) {
-          .section[id]:not(#hair) {
-              display:none;
-          }
+  @media (min-width:960px) { 
   
           .entry { 
               margin: 2rem auto;
@@ -1072,7 +1076,7 @@
           text-align: center;
       }
   
-      button#register {
+      button.register2 {
           margin: 5px 0 0 0!important;
           width: 100%;
           padding: 0.5rem !important;
