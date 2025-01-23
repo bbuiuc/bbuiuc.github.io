@@ -17,7 +17,7 @@ function startCountRoll(counterID) {
             clearInterval(counter);
         } else {
             changeCounterValue(counterID, i);
-                i++;
+            i++;
         }
     });
     

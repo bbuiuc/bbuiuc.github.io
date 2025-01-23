@@ -244,3 +244,18 @@ function moveTo(){
   }, 370);
 
 }            
+function updateProduct(imgEle, identifier, href, colour, price) {
+    let paymentButton = document.getElementById(identifier);
+    let productColour = document.getElementById("nearfield2-product-color");
+    let productPrice = document.getElementById("nearfield2-product-price");
+    let productDisplay = document.getElementById("nearfield2-product-display");
+    
+
+
+    productDisplay.src = imgEle.src;
+    productPrice.innerText = '$' + price.toFixed(2);
+    productColour.innerText = colour;
+    paymentButton.href = href;
+
+    return $('.products .selected').length > 0 && $('.products .selected').removeClass('selected') && $(imgEle).addClass('selected')
+}

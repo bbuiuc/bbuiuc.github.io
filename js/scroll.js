@@ -12,14 +12,15 @@ function getEleY(id) {
 }
 function showEle(id) {
     console.log(id);
-    $('#'+id).fadeIn(2000);
+    $('#' + id).animate({opacity:1});
 }
 window.onscroll = () => {
     // Current scroll-Y value (px) 
     currentY = window.scrollY;
     if ((currentY > getEleY("call-to-action") - viewHeight) && activatedCallToAction == false) {
         activatedCallToAction = true;
-        $('#call-to-action').animate({opacity:1});
+        showEle('call-to-action');
+        setTimeout(() => {showEle('register')}, 4000);
         for (counter in counters) {
             startCountRoll(counter);
         }
