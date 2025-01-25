@@ -1,8 +1,8 @@
 const counters = {
 
-    'users1':1078,
-    'visits1': 5388,
-    'monthly1': 449
+    'users1':1093,
+    'visits1': 5417,
+    'monthly1': 451
 }
 
 function changeCounterValue(counterID, val) {
