@@ -399,8 +399,7 @@
       font-style: normal !important;
   
   }
-  .section:not(#tech) .entry {
-    filter: blur(8px);
+  .section:not(#tech) .entry { 
 }
   
   a.LinkWidget_link__jHKiK {
@@ -587,8 +586,6 @@
   
   #carousel-selection button {
       scroll-snap-align: start;
-      /* min-width: 10rem; */
-      padding: 0.2rem 1rem 0.29rem 0.55rem;
       text-wrap: nowrap;
       /* flex: none; */
       display: flex;
@@ -783,13 +780,10 @@
       font-weight: 200;
   }
   /*Blur the businesses */
-  #businesses {
-      filter: blur(7px);
-  }
+ 
   
   div#businesses {
-      flex: 4;
-     filter:blur(0px)
+      flex: 4; 
   }
   
   img.sitelogo {

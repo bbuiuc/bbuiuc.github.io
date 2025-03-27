@@ -263,8 +263,7 @@ function updateProduct(imgEle, identifier, href, colour, price) {
 let businessLinks = document.querySelectorAll(".section:not(#tech) .entry a");
 for (link in businessLinks) {
     businessLinks[link].onclick = (e) => {
-        e.preventDefault();
+         
 
-    };
-    businessLinks[link].href="";
+    }; 
 }
