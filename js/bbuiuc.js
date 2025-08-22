@@ -230,7 +230,7 @@
       addSocialIcons();
       logoPlaceholders();
 
-      activateBtn($('#carousel-selection button[name="tech"]'),getColor('tech'));
+      activateBtn($('#carousel-selection button[name="hair"]'),getColor('hair'));
 
       
 function hidePopup(){
