@@ -240,8 +240,9 @@ function moveTo(){
 
 
   $('html, body').animate({
-    scrollTop: $(".resp-contain").offset().top
-  }, 370);
+    scrollTop: $("#carousel-selection").offset().top
+  }, 400);
+
 
 }            
 function updateProduct(imgEle, identifier, href, colour, price) {

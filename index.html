@@ -1,124 +1,88 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BBUIUC | UIUC's hub for black-owned businesses</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="https://bbuiuc.github.io/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!DOCTYPE html>
+    <html>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BBUIUC | UIUC's hub for black-owned businesses</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Story+Script&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="https://bbuiuc.github.io/favicon.ico">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/bbuiuc.css">
+    </head>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/bbuiuc.css">
-</head>
-<body>
-    <div id="popup-img" onclick='hidePopup()'>
-<img src="" />
-</div>
-        <div class="overlay" id="memberships">
-             <div class="memberships flex-col">
-                <h3 class="text-left">Choose a Membership</h3>
-                <p class="text-left">Cancel Anytime</p>
-                <div class="membership-container flex-row">
-                    <div class="membership" onclick="handleMembership('bronze')" name="bronze">
-                        <div class="flex-col">
-                            <h3 class="header">Bronze</h3>
-<h5 class="price">$ 2.99 / mo</h5>
-                            <ul>
-                                <li>
-                                    <span class="bolded">Business Overview</span>
-                                    : Showcase your business with its name and concise description
-                                </li>
-                                <li>
-                                    <span class="bolded">Website Integration</span>
-                                    : Include a clickable link to your website, directing visitors to your specified URL when they click on your card.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="membership selected" onclick="handleMembership('silver')" name="silver">
-                        <div class="flex-col">
-                              <h3 class="header">Silver</h3>
-<h5 class="price">$ 4.99 / mo</h5>
-                            <ul>
-                                <li>
-                                    <span class="bolded">Bronze membership benefits</span>
-                                </li>
-                               <li>
-                                <span class="bolded">Image Gallery</span>
-                                : Enhance your profile by uploading a gallery of images to showcase your business or products.
-                               </li>
-                               <li>
-                                <span class="bolded">Logo Display</span>
-                                : Add your company logo to personalize your card and strengthen brand recognition.
-                               </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="membership" onclick="handleMembership('gold')" name="gold"> 
-                        <div class="flex-col">
-                              <h3 class="header">Gold</h3>
-<h5 class="price">$ 7.99 / mo</h5>
-                            <ul>
-                                <li>
-                                    <span class="bolded">Silver membership benefits</span>
-                                    
-                                </li>
-                               
-                               <li>
-                                <span class="bolded">Exclusive Access</span>
-                                : Gain entry to community and campus events dedicated to supporting Black-owned businesses (join the mailing list for updates).
-                               </li>
-                               <li>
-                                <span class="bolded">Premium Visibility</span>
-                                : Ensure your business remains prominently featured at the top of the list for increased exposure.
-                               </li>
-                               <li>
-                                <span class="bolded">Product Showcase</span>
-                                : List and sell your products directly through your card for seamless transactions.
-                               </li>
-                            </ul>
-                        </div>
-                    </div>
+    <body>
+        <div id="popup-img" onclick='hidePopup()'>
+            <img src="" />
+        </div>
+        <!--<div class="announcements" name="go-back">
+            We missed you #FA2025
+        </div> -->
+        <div class="HTML__container gal">
+            <div class="nav">
+                <div class="flex-row align-vert">
+                    <h1 class="font-2-regular">BBUIUC</h1>
                 </div>
-                <div class="flex-col justify-center">
-                    <a href="https://buy.stripe.com/4gw4igfky6L72TmeUV" id="pay" class="enabled">
-                        Proceed to Payment
-                    </a>
-                    <button onclick="toggleMemberships(this)" class="goBack" name="go-back">
-                        Go Back
-                    </button>
+                <div class="navIcons flex-row align-vert">
+                    <a href="#"><img class="sitelogo" src="https://i.postimg.cc/v1ydqc72/newavatar-color-adj.png" alt="redblackgreen" border="0"></a>
                 </div>
-
+            </div>
+            <h3 class="font-1">
+                UIUC's Hub for Black Owned Businesses
+            </h3>
+            <img src="imgs/foel.jpg" class="backgroundImg">
+            <div class="bkgImgOverlay"></div>
+            <div id="carousel-selection">
+                <button name="tech" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/D0kMHnG8/tech.png" style="filter: invert(0);">
+                </button>
+                <button name="hair" class="active" style="background-color: rgb(127, 79, 36); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/W4dY4h6d/hair.png" style="filter: invert(0);">
+                </button>
+                <button name="beauty" class="" style="background-color: rgb(221, 220, 220);font-weight: 100;color: rgb(71, 71, 71);/* opacity: 0.6; */">
+                    <img src="https://i.postimg.cc/2ScXm4vp/beauty.png" style="filter: invert(0);">
+                </button>
+                <button name="photography" class="" style="background-color: rgb(221, 220, 220);font-weight: 100;color: rgb(71, 71, 71);/* opacity: 0.6; */">
+                    <img src="https://i.postimg.cc/FRcPj86m/photography.png" style="filter: invert(0);">
+                </button>
+                <button name="health" style=" font-weight: 500; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/44VMtHCt/health.png">
+                </button>
+                <button name="food" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/C5GQVXCJ/food.png" style="filter: invert(0);">
+                </button>
+                <button name="fashion" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/YSPVN1qN/fashion.png" style="filter: invert(0);">
+                </button>
+                <button name="music" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/2S8XPH1F/music.png" style="filter: invert(0);">
+                </button>
+                <button name="art" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/y8yKLT2v/art.png" style="filter: invert(0);">
+                </button>
+                <button name="business" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
+                    <img src="https://i.postimg.cc/nLNR9p00/business.png" style="filter: invert(0);">
+                </button>
+                <div class="qr showLplus">
+                    <img src="https://i.postimg.cc/vHLZc9GF/qrcode-grey-red.png">
+                </div>
+                <div class="clickable-btns showLplus flex-row">
+                    <button onclick="redirect('https://instagram.com/bbuiuc')"><i class="bi bi-instagram"></i></button>
+                    <button onclick="redirect('mailto:bbuiuc@gmail.com')"><i class="bi bi-envelope"></i></button>
+                </div>
+                <div class="placehold">
+                    Add a business
+                </div>
             </div>
         </div>
-
-<div class="announcements" name="go-back">
-    We missed you #FA2025
-</div>
-<div class="nav">
-    <div class="flex-row align-vert">
-        
-        <h1>BBUIUC</h1>
-    </div>
-    <div class="navIcons flex-row align-vert">
-    <a href="#"><img class="sitelogo" src="https://i.postimg.cc/v1ydqc72/newavatar-color-adj.png" alt="redblackgreen" border="0"></a>
-    </div>
-</div>
-<div class='HTML__container gal' >
-    <h3>
-        UIUC's Hub for Black Owned Businesses 
-    </h3> 
-    <img  class="cutout-img" src="https://i.postimg.cc/L854HCDV/bnaacc-cutout.png"/>
-</div>
-    <div class="HtmlWidget_container__xuiwx">
-        <div class="HtmlWidget_inner__vLcD0">
-
-
-    <!-- <div id="selection">
+        </div>
+        <div class="HtmlWidget_container__xuiwx">
+            <div class="HtmlWidget_inner__vLcD0">
+                <!-- <div id="selection">
         <select name="category_select2" onchange="activateCategory(this.value)" id="category_select2">
             <option value="" id="def">-- Choose a Category --</option>
             <option value="art">Art & Design</option>
@@ -133,840 +97,767 @@
             <option value="tech">Tech Services</option>
         </select>
     </div> -->
-    <div class = "resp-contain"> 
-         <div class="selection-container">
-                <div class="siteImg">
-                    <a href="#"><img class="sitelogo showLplus" src="https://i.postimg.cc/v1ydqc72/newavatar-color-adj.png" alt="redblackgreen" border="0"></a>
-                     </div>
-                     <h1 class="showLplus">
-                        BBUIUC
-                     </h1>
-<div id="carousel-selection">
-                 <button name="tech" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                <img src="https://i.postimg.cc/D0kMHnG8/tech.png" style="filter: invert(0);"> 
-
-            </button>
-                <button name="hair" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                    <img src="https://i.postimg.cc/W4dY4h6d/hair.png" style="filter: invert(0);"> 
-                    
-                </button>
-                <button name="beauty" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                    <img src="https://i.postimg.cc/2ScXm4vp/beauty.png" style="filter: invert(0);"> 
-                    
-                </button>
-                <button name="photography" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                    <img src="https://i.postimg.cc/FRcPj86m/photography.png" style="filter: invert(0);">
-                
-                </button>
-                <button name="health"  style=" font-weight: 500; color: rgb(71, 71, 71); opacity: 0.6;">
-                    <img src="https://i.postimg.cc/44VMtHCt/health.png"> 
-                </button>
-                <button name="food" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                    <img src="https://i.postimg.cc/C5GQVXCJ/food.png" style="filter: invert(0);">
-                    
-                </button>
-                <button name="fashion" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                    <img src="https://i.postimg.cc/YSPVN1qN/fashion.png" style="filter: invert(0);">
-                </button>
-                <button name="music" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                    <img src="https://i.postimg.cc/2S8XPH1F/music.png" style="filter: invert(0);">
-                </button>
-               <button name="art" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                <img src="https://i.postimg.cc/y8yKLT2v/art.png" style="filter: invert(0);">
-            </button>
-            <button name="business" class="" style="background-color: rgb(221, 220, 220); font-weight: 100; color: rgb(71, 71, 71); opacity: 0.6;">
-                <img src="https://i.postimg.cc/nLNR9p00/business.png" style="filter: invert(0);">
-
-            </button>
-           
-            <div class="qr showLplus">
-                    <img src="https://i.postimg.cc/vHLZc9GF/qrcode-grey-red.png">
-                </div>
-                <div class="clickable-btns showLplus flex-row">
-                     <button onclick="redirect('https://instagram.com/bbuiuc')"><i class="bi bi-instagram"></i></button> 
-                    <button onclick="redirect('mailto:bbuiuc@gmail.com')"><i class="bi bi-envelope"></i></button>
-                </div>
-            <div class="placehold">
-                Add a business
-            </div>
-        </div>
-
-        </div>
-        <div id="businesses">
-            <div class="section" id="art">
-                <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
-                    <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(0, 107, 159);"></div>
-                </div>
-                <div class="TextWidget_container__qyZJA">
-                    <div class="TextWidget_inner__M9uaJ">
-                        <h2 class="TextWidget_text__GuzdM" style="color: rgb(0, 107, 159); text-decoration: none; min-height: 39px;">Art &amp; Design</h2>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv">
-                            <a target="_blank" href="https://www.instagram.com/xtc.visualz/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(0, 107, 159), rgb(0, 188, 233)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw">
-                                    <img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/xtc.jpg" style="left: 0%; top: 0%; width: 100%;">
+                <div class="resp-contain">
+                    <div id="businesses">
+                        <div class="section" id="art">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(0, 107, 159);"></div>
+                            </div>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="color: rgb(0, 107, 159); text-decoration: none; min-height: 39px;">Art &amp; Design</h2>
                                 </div>
-                                <span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">XTC Visualz</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 23.4px;">Party/birthday flyers, YouTube intros/banners, etc - XTC</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="beauty">
-                <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
-                    <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(218, 19, 137);"></div>
-                </div>
-                <div class="TextWidget_container__qyZJA">
-                    <div class="TextWidget_inner__M9uaJ">
-                        <h2 class="TextWidget_text__GuzdM" style="font: 32px / 41.6px Alice; color: rgb(218, 19, 137); text-decoration: none; min-height: 41.6px;">Beauty &amp; Cosmetics</h2>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/lashedbykiekie" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.postimg.cc/26bhvc5q/419008167-291485830571532-9148106545298416108-n.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Lashedbykiekie</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“I do individual lash extensions!” - @lashedbykiekie</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://lashedbylysee.as.me/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 50px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/alyse.png" style="left: 0%; top: 0%; height: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Princess View</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 23.4px;">If you’re not getting your lashes done by Lysee then wyddd?? - The Founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/jazellesavenue?igsh=bjBqcTU0aTRzNnd3" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(135deg, rgb(189, 16, 197), rgb(255, 0, 173)); border: none; width: 100%; min-height: 68px; border-radius: 50px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/jazelle.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Jazelle’s Avenue </span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">There is Elegance in Every Blink - @jazellesavenue</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/rj.nailz" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 50px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/rj.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">RJ Nailz</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 20.8px;">At RJ Nailz, I strive to transform your nails with beautiful polygel nail enhancement services. Whether you're looking for a classic French manicure or a bold and vibrant design, I’ve got you covered! - RJ</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/theenailsuite?igsh=dXdubm5kemtmeWlo" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 35px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/sika.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Thee Nail Suite</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 20.8px;">Acrylic Nails &amp; Manicures - @theenailsuite</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/lelasbeautybar" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/lela.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Lela’s Beauty Bar</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 20.8px;">The best lash and brow services - @lelasbeautybar</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://sassysetsbyniyy.as.me/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" src="imgs/sassy.png" class="LinkWidget_image__GPYZJ" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk"  style="color: white; text-decoration: none;">Sassysets.byniyy</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 20.8px;">“Life is not perfect but your nails can be” -@sassysetsbyniyy</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/tystylezzz/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/ty.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">TyStylezzz </span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“Travel Stylist located at UIUC currently. I do braids, quick weaves, ponys, locs, men’s styles too! ” - @tystylezzz</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/cierrawthemua" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/cierra.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">CierraWTheMua</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“Makeup Artistry” - @cierrawthemua</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://bigoextensions.as.me/schedule.php" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.postimg.cc/mkmZ8Rk8/bigoextensions.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Big O Extensions</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“A safe space where ladies get self care, girl talk/therapy, and leave with luxurious lashes all in one!” - The Founder</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="section" id="business">
-                <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
-                    <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(9, 54, 4);"></div>
-                </div>
-                <div class="TextWidget_container__qyZJA">
-                    <div class="TextWidget_inner__M9uaJ">
-                        <h2 class="TextWidget_text__GuzdM" style="font: bold 30px / 39px GillSans; color: rgb(9, 54, 4); text-decoration: none; min-height: 39px;">Business</h2>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://hipolink.me/nearfield" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(9, 54, 4), rgb(0, 127, 22)); border: none; width: 100%; min-height: 68px; border-radius: 10px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_roundSquare__gy4Qb"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/minimalist-logo.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Nearfield</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">The only business card you will ever need, guranteed! - Tyrese, Founder of Nearfield</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="fashion">
-                <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
-                    <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(203, 30, 30);"></div>
-                </div>
-                <div class="TextWidget_container__qyZJA">
-                    <div class="TextWidget_inner__M9uaJ">
-                        <h2 class="TextWidget_text__GuzdM" style="font: 32px / 41.6px PoiretOne; color: rgb(203, 30, 30); text-decoration: none; min-height: 41.6px;">Fashion &amp; Accessories</h2>
-                    </div>
-                </div>
-                
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://designedbytemi.com/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(248, 25, 25), rgb(147, 21, 21)); border: none; width: 100%; min-height: 68px; border-radius: 25px;">
-                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/temi.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Temi Customs</span>
-                        </a></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Tailoring, custom clothing, and it is a fashion brand! - @temicustoms</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="food">
-                <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
-                    <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(110, 33, 6);"></div>
-                </div>
-                <div class="TextWidget_container__qyZJA">
-                    <div class="TextWidget_inner__M9uaJ">
-                        <h2 class="TextWidget_text__GuzdM" style="font: 30px / 39px Copperplate; color: rgb(110, 33, 6); text-decoration: none; min-height: 39px;">Food &amp; Beverages</h2>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="LinkWidget_container__pW7c9">
-                        <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/oohayannia?igsh=ajRuZnVvd3kya3A2&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(110, 33, 6), rgb(73, 25, 11)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                            <span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Treatsbyya </span></a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Sweet Treats including chocolate covered strawberries and taffy grapes for those with a sweet tooth!  - @oohayannia</p>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv">
+                                        <a target="_blank" href="https://www.instagram.com/xtc.visualz/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(0, 107, 159), rgb(0, 188, 233)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw">
+                                                <img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/xtc.jpg" style="left: 0%; top: 0%; width: 100%;">
+                                            </div>
+                                            <span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">XTC Visualz</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 23.4px;">Party/birthday flyers, YouTube intros/banners, etc - XTC</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/korinnekakes" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(110, 33, 6), rgb(73, 25, 11)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/korinne-kakes.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Korinne Kakes</span>
-                            </a></div>
-                        </div>
-                        <div class="imgs">
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Korinne Kakes is a mobile bakery that provides cakes, hand-held treats, and all other sweet needs!  - @korinnekakes</p>
+                        <div class="section" id="beauty">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(218, 19, 137);"></div>
+                            </div>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="font: 32px / 41.6px Alice; color: rgb(218, 19, 137); text-decoration: none; min-height: 41.6px;">Beauty &amp; Cosmetics</h2>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/lashedbykiekie" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.postimg.cc/26bhvc5q/419008167-291485830571532-9148106545298416108-n.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Lashedbykiekie</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“I do individual lash extensions!” - @lashedbykiekie</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://lashedbylysee.as.me/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 50px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/alyse.png" style="left: 0%; top: 0%; height: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Princess View</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 23.4px;">If you’re not getting your lashes done by Lysee then wyddd?? - The Founder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/jazellesavenue?igsh=bjBqcTU0aTRzNnd3" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(135deg, rgb(189, 16, 197), rgb(255, 0, 173)); border: none; width: 100%; min-height: 68px; border-radius: 50px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/jazelle.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Jazelle’s Avenue </span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">There is Elegance in Every Blink - @jazellesavenue</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/rj.nailz" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 50px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/rj.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">RJ Nailz</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 20.8px;">At RJ Nailz, I strive to transform your nails with beautiful polygel nail enhancement services. Whether you're looking for a classic French manicure or a bold and vibrant design, I’ve got you covered! - RJ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/theenailsuite?igsh=dXdubm5kemtmeWlo" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 35px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/sika.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Thee Nail Suite</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 20.8px;">Acrylic Nails &amp; Manicures - @theenailsuite</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/lelasbeautybar" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/lela.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Lela’s Beauty Bar</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 20.8px;">The best lash and brow services - @lelasbeautybar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://sassysetsbyniyy.as.me/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" src="imgs/sassy.png" class="LinkWidget_image__GPYZJ" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Sassysets.byniyy</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: rgb(0, 0, 0); text-decoration: none; min-height: 20.8px;">“Life is not perfect but your nails can be” -@sassysetsbyniyy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/tystylezzz/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/ty.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">TyStylezzz </span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“Travel Stylist located at UIUC currently. I do braids, quick weaves, ponys, locs, men’s styles too! ” - @tystylezzz</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/cierrawthemua" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/cierra.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">CierraWTheMua</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“Makeup Artistry” - @cierrawthemua</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://bigoextensions.as.me/schedule.php" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 0, 173), rgb(189, 16, 197)); border: none; width: 100%; min-height: 68px; border-radius: 68px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.postimg.cc/mkmZ8Rk8/bigoextensions.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Big O Extensions</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“A safe space where ladies get self care, girl talk/therapy, and leave with luxurious lashes all in one!” - The Founder</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/insatiablymade" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(110, 33, 6), rgb(73, 25, 11)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://ugc.production.linktr.ee/1a9f4e74-572e-4661-b753-37f277d83622_447900758-358254196898673-6248171738164841003-n.jpeg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Insatiably Made</span>
-                            </a></div>
-                        </div>
-                        <div class="imgs">
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“The Constantly Craved Creations”. Treats, Party Favors, and more!</p>
+                        <div class="section" id="business">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(9, 54, 4);"></div>
+                            </div>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="font: bold 30px / 39px GillSans; color: rgb(9, 54, 4); text-decoration: none; min-height: 39px;">Business</h2>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://hipolink.me/nearfield" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(9, 54, 4), rgb(0, 127, 22)); border: none; width: 100%; min-height: 68px; border-radius: 10px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_roundSquare__gy4Qb"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/minimalist-logo.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Nearfield</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">The only business card you will ever need, guranteed! - Tyrese, Founder of Nearfield</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="section activeCategory" id="hair">
-                    <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
-                        <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(224, 93, 4);"></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <h2 class="TextWidget_text__GuzdM" style="font: bold 30px / 39px Comfortaa; color: rgb(224, 93, 4); text-decoration: none; min-height: 39px;">Hair</h2>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/_skillsthatheal" rrel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.postimg.cc/KYFmtRvt/434263797-1090003612211135-3298400709953283271-n.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Skills That Heal</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“I run a hairstyling business that specializes in hair braiding services.” - @_skillsthatheal</p>
+                        <div class="section" id="fashion">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(203, 30, 30);"></div>
+                            </div>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="font: 32px / 41.6px PoiretOne; color: rgb(203, 30, 30); text-decoration: none; min-height: 41.6px;">Fashion &amp; Accessories</h2>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://designedbytemi.com/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(248, 25, 25), rgb(147, 21, 21)); border: none; width: 100%; min-height: 68px; border-radius: 25px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/temi.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Temi Customs</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Tailoring, custom clothing, and it is a fashion brand! - @temicustoms</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/locdbychlo?igsh=MXA4dTltMmZkZGg1MA%3D%3D&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/chlo.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Locd by Chlo</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Providing quality Loc maintenance for a reasonable price for college students. - @locdbychlo</p>
+                        <div class="section" id="food">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(110, 33, 6);"></div>
+                            </div>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="font: 30px / 39px Copperplate; color: rgb(110, 33, 6); text-decoration: none; min-height: 39px;">Food &amp; Beverages</h2>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/oohayannia?igsh=ajRuZnVvd3kya3A2&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(110, 33, 6), rgb(73, 25, 11)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Treatsbyya </span></a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Sweet Treats including chocolate covered strawberries and taffy grapes for those with a sweet tooth! - @oohayannia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/korinnekakes" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(110, 33, 6), rgb(73, 25, 11)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/korinne-kakes.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Korinne Kakes</span>
+                                        </a></div>
+                                </div>
+                                <div class="imgs">
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Korinne Kakes is a mobile bakery that provides cakes, hand-held treats, and all other sweet needs! - @korinnekakes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/insatiablymade" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(110, 33, 6), rgb(73, 25, 11)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://ugc.production.linktr.ee/1a9f4e74-572e-4661-b753-37f277d83622_447900758-358254196898673-6248171738164841003-n.jpeg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Insatiably Made</span>
+                                        </a></div>
+                                </div>
+                                <div class="imgs">
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“The Constantly Craved Creations”. Treats, Party Favors, and more!</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/xtc.essentials?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/xtc.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">XTC Essentials</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">'I AM IN XTC' - This is my hair business specializing in braids. - XTC</p>
+                        <div class="section activeCategory" id="hair">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: rgb(224, 93, 4);"></div>
+                            </div>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="font: bold 30px / 39px Comfortaa; color: rgb(224, 93, 4); text-decoration: none; min-height: 39px;">Hair</h2>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/_skillsthatheal" rrel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.postimg.cc/KYFmtRvt/434263797-1090003612211135-3298400709953283271-n.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Skills That Heal</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“I run a hairstyling business that specializes in hair braiding services.” - @_skillsthatheal</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/locdbychlo?igsh=MXA4dTltMmZkZGg1MA%3D%3D&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/chlo.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Locd by Chlo</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Providing quality Loc maintenance for a reasonable price for college students. - @locdbychlo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/xtc.essentials?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/xtc.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">XTC Essentials</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">'I AM IN XTC' - This is my hair business specializing in braids. - XTC</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/mando_cutzz" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/mando.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Mando_Cutzz</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 23.4px;">'As a skilled barber, I offer expert haircare services tailored to the unique needs and textures of diverse hair types, with a commitment to creating a welcoming and inclusive space, clients can expect a professional and comfortable experience, leaving my chair confident and satisfied.. - @Mando_Cutzz</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/braidedbynanaaa?igsh=c2FzaHNvaGN0enI%3D&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/nana.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">BraidedByNana</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">All braided styles available! - Nana</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/zainabthestylist_?igsh=MW9meml0N3E0N3JhaA%3D%3D&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(224, 93, 4), rgb(255, 140, 61)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/zaina.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">ZainabTheStylist_</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">I’m a hairstylist who specializes in everything from braids to locs for both men and women. - Zainab</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/p.m.g.marrea" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(224, 93, 4), rgb(255, 140, 61)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Elite Cuts</span></a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">If you can dream it, I can cut it - @p.m.g.marrea</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/naturalsby__dae" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(222, 111, 37)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/mando.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Naturalsby__dae</span>
+                                        </a></div>
+                                </div>
+                                <div class="imgs">
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Heyy, I'm Dae and I do natural hair styles, check me out. - Dae</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://styledbylon.as.me/schedule.php" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(222, 111, 37)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/lon.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">StyledByLon</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Braid extensions services such as knotless braids, stitch braids, and faux locs. - The Founder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/thee.braidgoat" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(222, 111, 37), rgb(255, 140, 61)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/tbc.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">TheeBraidGoat</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“Goated” - @TheeBraidGoat</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/layedbylai_" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(222, 111, 37)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/lai.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">LayedbyLai</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">I am a braider who does men’s and women’s styles from stitch braids, knotless braids, retwisted, etc. I provide affordable yet good quality service as far as braiding. - @layedbylai_</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/tystylezzz/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(222, 111, 37)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/ty.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">TyStylezzz </span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“Travel Stylist located at UIUC currently. I do braids, quick weaves, ponys, locs, men’s styles too! ” - @tystylezzz</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" hr-`ef="https://www.instagram.com/braidsby_bonny" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.ibb.co/XjmyrDS/bonny.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Braidsby_bonny</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">I do all type of braids - @baidsby_bonny</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://locdbymari.square.site/" rrel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://480d04e1dba05b55e74b.cdn6.editmysite.com/uploads/b/480d04e1dba05b55e74b52af096158e1827e72517ba7f22feb0bce2a935937e7/IMG_0007_1690400250.jpeg?width=2400&optimize=medium" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Loc'd by Mari</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“High Quality. Low Prices” - Mari</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/5starstyless" rrel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.postimg.cc/qMVHZL73/358803727-1769665823514484-6901715355637548582-n.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">5StarStyles</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Where my 5Star chicks at? Come get styled by the 5StarStylist, you won’t regret it cause she don’t miss! Specializing in wig installs and quickweaves ★ ★ ★ ★ ★ -@5starstyless</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://sammy.expert/1724070521235" rrel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://frank-development.ams3.digitaloceanspaces.com/user/66c33a7ac80ec04f36a25ce5/1724071220502.jpeg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">StyledByE</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Hairstyles dont always gotta be pricey especially if you booking with me!! </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/mando_cutzz" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/mando.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Mando_Cutzz</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 23.4px;">'As a skilled barber, I offer expert haircare services tailored to the unique needs and textures of diverse hair types, with a commitment to creating a welcoming and inclusive space, clients can expect a professional and comfortable experience, leaving my chair confident and satisfied.. - @Mando_Cutzz</p>
+                        <div class="section" id="health">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 20px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 95%; background: rgb(70, 149, 130);">
+                                </div>
+                            </div>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="font: 30px / 39px GillSans; color: rgb(70, 149, 130); text-decoration: none; min-height: 39px;">Health &amp; Fitness</h2>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/prince.lifts" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(70, 149, 130), rgb(32, 208, 168)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Prince.Lifts</span></a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Certified Personal Trainer. Prince.Lifts on instagram. Come get right!💯 - @prince.lifts</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/sadiiqqfit" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(70, 149, 130), rgb(32, 208, 168)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Sadiiqq Fit</span></a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Achieving your fitness goals can be enjoyable and I'm here to help with that. I offer online training and you can shoot me a DM if you have any questions. - @sadiiqqfit</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/eman2fit" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(70, 149, 130), rgb(32, 208, 168)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Eman2fit</span></a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Personal Training - @eman2fit</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/braidedbynanaaa?igsh=c2FzaHNvaGN0enI%3D&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/nana.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">BraidedByNana</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">All braided styles available! - Nana</p>
+                        <div class="section" id="music">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 20px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 95%; background: rgb(92, 31, 164);"></div>
+                            </div>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="font: bold 30px / 39px PoiretOne; color: rgb(92, 31, 164); text-decoration: none; min-height: 39px;">Music &amp; Entertainment</h2>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/dj_qnation?igsh=MTlodWpoNjIzeG9hMQ%3D%3D&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(92, 31, 164), rgb(56, 13, 104)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_roundSquare__gy4Qb"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/q.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">DJ QNation Music Entertainment </span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">DJ for all type of events - Q</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/zainabthestylist_?igsh=MW9meml0N3E0N3JhaA%3D%3D&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(224, 93, 4), rgb(255, 140, 61)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/zaina.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">ZainabTheStylist_</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">I’m a hairstylist who specializes in everything from braids to locs for both men and women. - Zainab</p>
+                        <div class="section" id="photography">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 20px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 95%; background: rgb(60, 7, 41);"></div>
+                            </div>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="font: bold 30px / 39px DINCondensed; color: rgb(60, 7, 41); text-decoration: none; min-height: 39px;">Photography</h2>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/taylorarianna_photography/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/taylor.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Taylor Arianna Photography</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Tech and Digital Creation - Taylor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/flicks_by_winter?igsh=OTYwOGZ2eGI3Y2ty&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/flicks.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Flicks By Winter</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Photography services - @flicks_by_winter</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/ajsprod" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/ajp.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">AJsProd</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">I do photography here on the UIUC campus - @AJsProd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/bluvizuals" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: rgb(255, 255, 255); text-decoration: none;">Bluvizuals </span></a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;" m>Innovative Visuals Illuminated in Blu - @bluvizuals</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/dkworkz7" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: rgb(255, 255, 255); text-decoration: none;">Dkworkz7 </span></a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;" m>Videography / Photography - @Dkworkz7</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/p.m.g.marrea" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(224, 93, 4), rgb(255, 140, 61)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Elite Cuts</span></a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">If you can dream it, I can cut it - @p.m.g.marrea</p>
+                        <div class="section" id="tech">
+                            <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
+                                <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: #231b1d;"></div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/naturalsby__dae" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(222, 111, 37)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/mando.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Naturalsby__dae</span>
-                            </a></div>
-                        </div>
-                        <div class="imgs">
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Heyy, I'm Dae and I do natural hair styles, check me out.  - Dae</p>
+                            <div class="TextWidget_container__qyZJA">
+                                <div class="TextWidget_inner__M9uaJ">
+                                    <h2 class="TextWidget_text__GuzdM" style="font: 30px / 39px Mono; color: #231b1d; text-decoration: none; min-height: 39px;">Tech &amp; Services</h2>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://styledbylon.as.me/schedule.php" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(222, 111, 37)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/lon.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">StyledByLon</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Braid extensions services such as knotless braids, stitch braids, and faux locs. - The Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/thee.braidgoat" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(222, 111, 37), rgb(255, 140, 61)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/tbc.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">TheeBraidGoat</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“Goated” - @TheeBraidGoat</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/layedbylai_" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(222, 111, 37)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/lai.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">LayedbyLai</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">I am a braider who does men’s and women’s styles from stitch braids, knotless braids, retwisted, etc. I provide affordable yet good quality service as far as braiding. - @layedbylai_</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/tystylezzz/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(222, 111, 37)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/ty.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">TyStylezzz </span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“Travel Stylist located at UIUC currently. I do braids, quick weaves, ponys, locs, men’s styles too! ” - @tystylezzz</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" hr-`ef="https://www.instagram.com/braidsby_bonny" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.ibb.co/XjmyrDS/bonny.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Braidsby_bonny</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">I do all type of braids - @baidsby_bonny</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://locdbymari.square.site/" rrel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://480d04e1dba05b55e74b.cdn6.editmysite.com/uploads/b/480d04e1dba05b55e74b52af096158e1827e72517ba7f22feb0bce2a935937e7/IMG_0007_1690400250.jpeg?width=2400&optimize=medium" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">Loc'd by Mari</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">“High Quality. Low Prices” - Mari</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/5starstyless" rrel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://i.postimg.cc/qMVHZL73/358803727-1769665823514484-6901715355637548582-n.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">5StarStyles</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Where my 5Star chicks at? Come get styled by the 5StarStylist, you won’t regret it cause she don’t miss! Specializing in wig installs and quickweaves ★ ★ ★ ★ ★ -@5starstyless</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://sammy.expert/1724070521235" rrel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(90deg, rgb(255, 140, 61), rgb(224, 93, 4)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="https://frank-development.ams3.digitaloceanspaces.com/user/66c33a7ac80ec04f36a25ce5/1724071220502.jpeg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">StyledByE</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Hairstyles dont always gotta be pricey especially if you booking with me!! </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="health">
-                    <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 20px;">
-                        <div class="DelimiterWidget_inner__J7kh0" style="width: 95%; background: rgb(70, 149, 130);">
-
-                        </div>
-                    </div> 
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <h2 class="TextWidget_text__GuzdM" style="font: 30px / 39px GillSans; color: rgb(70, 149, 130); text-decoration: none; min-height: 39px;">Health &amp; Fitness</h2>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/prince.lifts" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(70, 149, 130), rgb(32, 208, 168)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Prince.Lifts</span></a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Certified Personal Trainer. Prince.Lifts on instagram. Come get right!💯 - @prince.lifts</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/sadiiqqfit" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(70, 149, 130), rgb(32, 208, 168)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Sadiiqq Fit</span></a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Achieving your fitness goals can be enjoyable and I'm here to help with that. I offer online training and you can shoot me a DM if you have any questions.  - @sadiiqqfit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/eman2fit" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(70, 149, 130), rgb(32, 208, 168)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: white; text-decoration: none;">Eman2fit</span></a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Personal Training - @eman2fit</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="music">
-                    <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 20px;">
-                        <div class="DelimiterWidget_inner__J7kh0" style="width: 95%; background: rgb(92, 31, 164);"></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <h2 class="TextWidget_text__GuzdM" style="font: bold 30px / 39px PoiretOne; color: rgb(92, 31, 164); text-decoration: none; min-height: 39px;">Music &amp; Entertainment</h2>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/dj_qnation?igsh=MTlodWpoNjIzeG9hMQ%3D%3D&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(92, 31, 164), rgb(56, 13, 104)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_roundSquare__gy4Qb"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/q.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: white; text-decoration: none;">DJ QNation Music Entertainment </span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">DJ for all type of events  - Q</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="photography">
-                    <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 20px;">
-                        <div class="DelimiterWidget_inner__J7kh0" style="width: 95%; background: rgb(60, 7, 41);"></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <h2 class="TextWidget_text__GuzdM" style="font: bold 30px / 39px DINCondensed; color: rgb(60, 7, 41); text-decoration: none; min-height: 39px;">Photography</h2>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/taylorarianna_photography/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/taylor.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Taylor Arianna Photography</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Tech and Digital Creation - Taylor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/flicks_by_winter?igsh=OTYwOGZ2eGI3Y2ty&amp;utm_source=qr" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/flicks.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Flicks By Winter</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Photography services - @flicks_by_winter</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/ajsprod" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_circle__8qUZw"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/ajp.jpg" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">AJsProd</span>
-                            </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">I do photography here on the UIUC campus - @AJsProd</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/bluvizuals" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: rgb(255, 255, 255); text-decoration: none;">Bluvizuals </span></a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;" m>Innovative Visuals Illuminated in Blu - @bluvizuals</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://www.instagram.com/dkworkz7" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(60, 7, 41), rgb(98, 50, 81)); border: none; width: 100%; min-height: 68px; border-radius: 8px;"><span class="LinkWidget_text___bWBY" style="color: rgb(255, 255, 255); text-decoration: none;">Dkworkz7 </span></a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;" m>Videography / Photography - @Dkworkz7</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="tech">
-                    <div class="DelimiterWidget_container__lgynE" style="padding-top: 40px; padding-bottom: 40px;">
-                        <div class="DelimiterWidget_inner__J7kh0" style="width: 89%; background: #231b1d;"></div>
-                    </div>
-                    <div class="TextWidget_container__qyZJA">
-                        <div class="TextWidget_inner__M9uaJ">
-                            <h2 class="TextWidget_text__GuzdM" style="font: 30px / 39px Mono; color: #231b1d; text-decoration: none; min-height: 39px;">Tech &amp; Services</h2>
-                        </div>
-                    </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://nfcards.github.io" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(9, 54, 4), rgb(0, 127, 22)); border: none; width: 100%; min-height: 68px; border-radius: 10px;">
-                                <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_roundSquare__gy4Qb"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/minimalist-logo.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Nearfield</span>
-                          </a></div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Digital business cards that never go to waste.</p>
-                            </div>
-                            <div class="products-section flex-col">
-                                <div class="features flex-row">
-                                    <img class=" bkg feature" src="https://nfcards.github.io/assets/nfccard-feature3.svg">
-                                    <img class=" bkg" src="https://nfcards.github.io/assets/nfccard-customization1.svg" style="
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv"><a target="_blank" href="https://nfcards.github.io" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: linear-gradient(45deg, rgb(9, 54, 4), rgb(0, 127, 22)); border: none; width: 100%; min-height: 68px; border-radius: 10px;">
+                                            <div class="LinkWidget_iconContainer__Tb1PZ LinkWidget_big__r2pfk LinkWidget_roundSquare__gy4Qb"><img alt="logo" class="LinkWidget_image__GPYZJ" src="imgs/minimalist-logo.png" style="left: 0%; top: 0%; width: 100%;"></div><span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Nearfield</span>
+                                        </a></div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 20.8px;">Digital business cards that never go to waste.</p>
+                                    </div>
+                                    <div class="products-section flex-col">
+                                        <div class="features flex-row">
+                                            <img class=" bkg feature" src="https://nfcards.github.io/assets/nfccard-feature3.svg">
+                                            <img class=" bkg" src="https://nfcards.github.io/assets/nfccard-customization1.svg" style="
                                     /* width: 33%; */
                                     ">
-                                    <img class=" bkg" src="https://nfcards.github.io/assets/nfccard-feature1.svg" style="
+                                            <img class=" bkg" src="https://nfcards.github.io/assets/nfccard-feature1.svg" style="
                                     /* width: 33%; */
                                     ">
-                                    <img class=" bkg" src="https://nfcards.github.io/assets/nfccard-customization2.svg" style="
+                                            <img class=" bkg" src="https://nfcards.github.io/assets/nfccard-customization2.svg" style="
                                     /* width: 33%; */
                                     "><img class=" bkg" src="https://nfcards.github.io/assets/nfccard-feature2.svg" style="
                                     /* width: 33%; */
                                     ">
+                                        </div>
+                                        <h4><i class="bi bi-shop"></i> Shop Nearfield</h4>
+                                        <div class="flex-row products ">
+                                            <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/14k9AE5NicrwaxafZ4','Black',20.00)" src="https://nfcards.github.io/product-imgs/black.png" style="
+                                    width: 33%;
+                                    " class="selected">
+                                            <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/5kA004b7C0IObBe9AF','Red',20.00)" src="https://nfcards.github.io/product-imgs/crimson.png" style="
+                                    width: 33%;
+                                    ">
+                                            <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/aEU9AE7Vq1MScFi6os','Green',20.00)" src="https://nfcards.github.io/product-imgs/green.png" style="
+                                    width: 33%;
+                                    ">
+                                            <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/00g8wA0sYbnseNq9AH','White',20.00)" src="https://nfcards.github.io/product-imgs/white.png" style="
+                                    width: 33%;
+                                    ">
+                                            <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/fZe4gka3ygHMcFicMV','Pink',20.00)" src="https://nfcards.github.io/product-imgs/pink.png" style="
+                                    width: 33%;
+                                    ">
+                                            <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/9AQbIMfnS0IO6gU14c','Blue',20.00)" src="https://nfcards.github.io/product-imgs/blue.png" style="
+                                    width: 33%;
+                                    ">
+                                        </div>
+                                        <div class="product-display">
+                                            <img id="nearfield2-product-display" src="https://nfcards.github.io/product-imgs/black.png" class="display">
+                                            <div class="product-details flex-col">
+                                                <h5>Color: <b id="nearfield2-product-color">Black</b></h5>
+                                                <h5><b id="nearfield2-product-price">$20.00</b></h5>
+                                                <a href="https://nfcards.github.io/product-imgs/black.png" class="paymentAnchor" id="nearfield2Pay">
+                                                    <button class="payment"> Purchase </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
-
-                                <h4><i class="bi bi-shop"></i> Shop Nearfield</h4>
-                                <div class="flex-row products ">
-                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/14k9AE5NicrwaxafZ4','Black',20.00)" src="https://nfcards.github.io/product-imgs/black.png" style="
-                                    width: 33%;
-                                    " class="selected">      
-                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/5kA004b7C0IObBe9AF','Red',20.00)" src="https://nfcards.github.io/product-imgs/crimson.png" style="
-                                    width: 33%;
-                                    ">
-                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/aEU9AE7Vq1MScFi6os','Green',20.00)" src="https://nfcards.github.io/product-imgs/green.png" style="
-                                    width: 33%;
-                                    ">
-                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/00g8wA0sYbnseNq9AH','White',20.00)" src="https://nfcards.github.io/product-imgs/white.png" style="
-                                    width: 33%;
-                                    ">
-                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/fZe4gka3ygHMcFicMV','Pink',20.00)" src="https://nfcards.github.io/product-imgs/pink.png" style="
-                                    width: 33%;
-                                    ">
-                                    <img id="nearfield2-product-selection" onclick="updateProduct(this,'nearfield2Pay','https://buy.stripe.com/9AQbIMfnS0IO6gU14c','Blue',20.00)" src="https://nfcards.github.io/product-imgs/blue.png" style="
-                                    width: 33%;
-                                    ">
-                                </div>
-                                <div class="product-display">
-                                    <img id="nearfield2-product-display" src="https://nfcards.github.io/product-imgs/black.png" class="display"><div class="product-details flex-col">
-                                        <h5>Color: <b id="nearfield2-product-color">Black</b></h5>
-                                        <h5><b id="nearfield2-product-price">$20.00</b></h5>
-                                        <a href="https://nfcards.github.io/product-imgs/black.png" class="paymentAnchor" id="nearfield2Pay">
-                                            <button class="payment"> Purchase </button>
+                            </div>
+                            <div class="entry">
+                                <div class="LinkWidget_container__pW7c9">
+                                    <div class="LinkWidget_inner__psVfv">
+                                        <a target="_blank" href="https://www.instagram.com/entire_ty/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: #231b1d; border: none; width: 100%; min-height: 68px; border-radius: 8px;">
+                                            <span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Reese Web Solutions</span>
                                         </a>
+                                    </div>
+                                </div>
+                                <div class="TextWidget_container__qyZJA">
+                                    <div class="TextWidget_inner__M9uaJ">
+                                        <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 23.4px;">I build personalized websites that look 2x better than your best LinkTree. I built the site you are looking at, and as you can see, I can embed multimedia (images, videos, and more!) - Tyrese</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="entry">
-                        <div class="LinkWidget_container__pW7c9">
-                            <div class="LinkWidget_inner__psVfv">
-                                <a target="_blank" href="https://www.instagram.com/entire_ty/" rel="noreferrer" class="LinkWidget_link__jHKiK" style=" background: #231b1d; border: none; width: 100%; min-height: 68px; border-radius: 8px;">
-
-                                    <span class="LinkWidget_text___bWBY LinkWidget_big__r2pfk" style="color: rgb(255, 255, 255); text-decoration: none;">Reese Web Solutions</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="TextWidget_container__qyZJA">
-                            <div class="TextWidget_inner__M9uaJ">
-                                <p class="TextWidget_text__GuzdM" style=" color: black; text-decoration: none; min-height: 23.4px;">I build personalized websites that look 2x better than your best LinkTree. I built the site you are looking at, and as you can see, I can embed multimedia (images, videos, and more!) - Tyrese</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 
-            </div>
-       <div id="spotlight" class="showLplus">
-            <h4>Spotlight</h4>
-            <div class="pin flex-row">
-                <img class="logo" src="https://i.postimg.cc/FRN2mFGm/digicard1.png
+                    <div id="spotlight" class="showLplus">
+                        <h4>Spotlight</h4>
+                        <div class="pin flex-row">
+                            <img class="logo" src="https://i.postimg.cc/FRN2mFGm/digicard1.png
                     ">
-                <div class="flex-col">
-                    <h5>Nearfield</h5>
-                    <h6>Digital Business 
-                        Cards</h6>
+                            <div class="flex-col">
+                                <h5>Nearfield</h5>
+                                <h6>Digital Business
+                                    Cards</h6>
+                            </div>
+                        </div>
+                        <div class="spacer">
+                        </div>
+                        <div class="pin">
+                            <div class="call-to-action">
+                                <div class="flex-col align-vert ">
+                                    <p>Expose your business to BBUIUC's</p>
+                                </div>
+                                <div class="flex-row justify-even pt-5">
+                                    <div class=" flex-col stat">
+                                        <p>1,078</p>
+                                        <p>Users</p>
+                                    </div>
+                                    <div class=" flex-col stat">
+                                        <p>5,388</p>
+                                        <p>Visits</p>
+                                    </div>
+                                    <div class=" flex-col stat">
+                                        <p>≈ 449</p>
+                                        <p>Views /mo</p>
+                                    </div>
+                                </div>
+                                <div class="align-vert text-center">
+                                    <button class="register2 font-2-regular" onclick="toggleMemberships(this)">Become a member</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="spacer">
-                
-            </div>
-            <div class="pin">
+                <div class="poster">
+                    <!--           <img src="https://i.postimg.cc/ncWwPcKj/qr-banner-siteready-waifu2x-photo-noise2-scale.png">
+     -->
+                </div>
                 <div class="call-to-action">
-                    <div class="flex-col align-vert ">
-                        <p>Expose your business to BBUIUC's</p>
-                    </div>
-                    <div class="flex-row justify-even">
-                        <div class=" flex-col stat">
-                            <p>1,078</p>
-                            <p>Users</p>
+                    <div id="call-to-action" class="showOnScroll">
+                        <div class="flex-col align-vert ">
+                            <h3 class="font-1">Not on the list?</h3>
+                            <p class="font-2-regular">Expose your business to this platform's ...</p>
                         </div>
-                        <div class=" flex-col stat">
-                            <p>5,388</p>
-                            <p>Visits</p>
+                        <div class="flex-row justify-even">
+                            <div class=" flex-col stat">
+                                <p class="counter-roll" id="monthly1">≈ 449</p>
+                                <p>Views/mo</p>
+                            </div>
+                            <div class=" flex-col stat">
+                                <p class="counter-roll" id="users1">1,078</p>
+                                <p>Users</p>
+                            </div>
+                            <div class=" flex-col stat">
+                                <p class="counter-roll" id="visits1">5,388</p>
+                                <p>Visits</p>
+                            </div>
                         </div>
-                        <div class=" flex-col stat">
-                            <p>≈ 449</p>
-                            <p>Views /mo</p>
+                        <div class="align-vert text-center">
+                            <button id="register" class="register showOnScroll" onclick="toggleMemberships(this)">Register Here</button>
                         </div>
-                    </div>
-                    <div class="align-vert text-center">
-                        <button class="register2" onclick="toggleMemberships(this)">Become a member</button>
                     </div>
                 </div>
+                <!--<div class="footer">
+                    <div class="content-lapse">
+                        <div class="left half">
+                            <div class="qr">
+                                <img src="https://i.postimg.cc/vHLZc9GF/qrcode-grey-red.png">
+                            </div>
+                        </div>
+                        <div class="right half">
+                            <div class="clickable-btns">
+                                <button onclick="redirect('https://instagram.com/bbuiuc')"><i class="bi bi-instagram"></i>bbuiuc</button>
+                                <button onclick="redirect('mailto:bbuiuc@gmail.com')"><i class="bi bi-envelope"></i>bbuiuc@gmail.com</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="poster">
+                    <img src="imgs/wegotus.png">
+                </div>
+                <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+                <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                <script src="js/bbuiuc.js"> </script>
+                <script src="js/counters.js"></script>
+                <script src="js/scroll.js"></script>
             </div>
         </div>
-    </div>
+    </body>
 
-
-            <div class="poster">
-    <!--           <img src="https://i.postimg.cc/ncWwPcKj/qr-banner-siteready-waifu2x-photo-noise2-scale.png">
-     -->      </div>
-          <div class="call-to-action">
-            <div id="call-to-action" class="showOnScroll">
-
-           
-                <div class="flex-col align-vert ">
-                    <h3>Not on the list?</h3>
-                    <p>Expose your businesses to this platforms visitors</p>
-                </div>
-                <div class="flex-row justify-even">
-                    <div class=" flex-col stat">
-                        <p class="counter-roll" id="monthly1">≈ 449</p>
-                        <p>Views/mo</p>
-                    </div>
-                    <div class=" flex-col stat">
-                        <p class="counter-roll" id="users1">1,078</p>
-                        <p>Users</p>
-                    </div>
-                    <div class=" flex-col stat">
-                        <p class="counter-roll" id="visits1">5,388</p>
-                        <p>Visits</p>
-                    </div>
-                </div>
-                <div class="align-vert text-center">
-                    <button id="register" class="register showOnScroll" onclick="toggleMemberships(this)">Become a member</button>
-                </div>
-            </div>
-        </div>
-
-          <div class="footer">
-            <div class="content-lapse">
-                    <div class="left half">
-                        <div class="qr">
-                            <img src="https://i.postimg.cc/vHLZc9GF/qrcode-grey-red.png">
-                        </div>
-                    </div> 
-                    <div class="right half">
-                        
-                        <div class="clickable-btns">
-                            <button onclick="redirect('https://instagram.com/bbuiuc')"><i class="bi bi-instagram"></i>bbuiuc</button> 
-                            <button onclick="redirect('mailto:bbuiuc@gmail.com')"><i class="bi bi-envelope"></i>bbuiuc@gmail.com</button>
-                            
-                        </div>
-                    </div>
-                </div>
-        </div>
-    <div class="poster">
-      <img src="imgs/wegotus.png">
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="js/bbuiuc.js"> </script>
-    <script src="js/counters.js"></script>
-    <script src="js/scroll.js"></script>
-    </div>
-    </div>
-
-</body>
-</html>
+    </html>
